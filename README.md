@@ -5,12 +5,8 @@ website: http://www.charming-clinic.com/
 
 work flow:
 ----------
-  * default branch is `trunk`
-  * published production website branch is `master`
+  * published production website branch & default branch is `master`
+  * create a feature branch and send PR to modify
+  * if anything going wrong , just revert thr PR
+  * create a release tag
 
-step for modification
--------
-  1. editing on `trunk` directly 
-  1. use a PR merge into `master` 
-  1. if okay create a `release`
-  
