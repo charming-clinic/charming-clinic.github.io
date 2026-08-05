@@ -10,7 +10,19 @@ body {
 	margin-top: 5px;
 }
 
+.map map area {
+    outline: none;
+}
+
 .style7 {font-size: 18px}
+
+
+area:focus{
+    border: none;
+    outline-style: none; 
+    -moz-outline-style:none;  
+}
+
 -->
 </style></head>
 
@@ -20,8 +32,8 @@ body {
   <tr>
     <td>&nbsp;</td>
     <td width="700">
-<img src="image/bg700.png"  usemap="#bgmap" />
-<map id="imgmap" name="bgmap">
+<img class="map" src="image/bg700.png"  usemap="#bgmap" hidefocus="true" />
+<map class="map" id="imgmap" name="bgmap">
     <area shape="circle" alt="醫師簡介" title="醫師簡介" coords="116,40,30" href="/html/doctor/docmain.htm" />
     <area shape="rect" alt="醫師簡介" title="醫師簡介" coords="121,4,179,75" href="/html/doctor/docmain.htm" />
     <area shape="circle" alt="醫師簡介" title="醫師簡介" coords="184,40,30" href="/html/doctor/docmain.htm" />
@@ -37,7 +49,7 @@ body {
     <area shape="circle" alt="診所特色" title="診所特色" coords="106,244,30" href="/html/specific/spemain.htm" />
     <area shape="rect" alt="診所特色" title="診所特色" coords="111,209,168,279" href="/html/specific/spemain.htm" />
     <area shape="circle" alt="診所特色" title="診所特色" coords="173,244,30" href="/html/specific/spemain.htm" /> 
-    
+
     <area shape="circle" alt="門診時間" title="門診時間" coords="516,39,30" href="/html/time/timemain.htm?v3=1" />
     <area shape="rect" alt="門診時間" title="門診時間" coords="521,4,581,74" href="/html/time/timemain.htm?v3=1" />
     <area shape="circle" alt="門診時間" title="門診時間" coords="586,39,30" href="/html/time/timemain.htm?v3=1" /> 
@@ -69,7 +81,6 @@ body {
 
         <tr> <td>&nbsp;</td> <td>  <font color="YELLOW" size=+2><center> 當日現場掛號  恕不提供預約及電話掛號 </center></font> </td> <td>&nbsp;</td></tr>
         <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
-        <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
         <!--
         <tr> <td>&nbsp;</td> <td>  <font color="RED" size=+2><center> 1月2日(一) 休診 </center></font> </td> <td>&nbsp;</td></tr>
         <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
@@ -96,12 +107,18 @@ body {
 	<tr> <td>&nbsp;</td> <td>  <font color=BLACK size=+3><center><strong>2/15(六) 及 2/28(五) 休診</strong></center></font> </td> <td>&nbsp;</td></tr>
     -->
     <!-- <tr> <td>&nbsp;</td> <td>  <font color=BLACK size=+3><center><strong>2/3(一) 恢復正常看診時間</strong></center></font> </td> <td>&nbsp;</td></tr> --> 
-	<tr> <td>&nbsp;</td> <td> </td> <td>&nbsp;</td></tr>
         <!-- -->
 
+        <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
+        <tr> <td>&nbsp;</td> <td>  <font color=blue size=+3><center><b>自115年10月起 停止 周三 夜診</b></center></font> </td> <td>&nbsp;</td></tr>
+        <tr> <td>&nbsp;</td> <td>  <font color=blue size=+2><center><b>看診時間亦有異動</b></center></font> </td> <td>&nbsp;</td></tr>
+        <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
+        <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
+
 	<!-- vvvv 如果要改用圖片的話，使用 google slide 修改 vvvv-->
-        <tr> <td>&nbsp;</td> <td>  <img border=0 width=700 src="image/time-202606.png" align="middle"> </td> <td>&nbsp;</td></tr>
+        <tr> <td>&nbsp;</td> <td>  <img width="700" border=0 src="image/time-202606.png" align="middle"> </td> <td>&nbsp;</td></tr>
 	<!-- ^^^^ 如果要改用圖片的話，使用 google slide 修改 ^^^^-->
+
 
         <!--
         <tr> <td>&nbsp;</td> <td>  <font color=YELLOW size=+2><center><a href="remote.html">視訊門診</a></center></font> </td> <td>&nbsp;</td></tr>
@@ -112,9 +129,12 @@ body {
 
         <tr> <td>&nbsp;</td> <td>  <font color=YELLOW size=+2><center>(早診 11:45 及晚診 20:45 起停止掛號)</center></font> </td> <td>&nbsp;</td></tr>
 
+        <!--
         <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
         <tr> <td>&nbsp;</td> <td>  <font color=blue size=+2><center><b>  2022年起 國定假日  休診</b></center></font> </td> <td>&nbsp;</td></tr>
         <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
+        -->
+
 
         <!--
         <tr> <td>&nbsp;</td> <td>  &nbsp; </td> <td>&nbsp;</td></tr>
@@ -128,10 +148,3 @@ body {
 </body>
 
 </html>
-
-
-
-
-
-
-
